@@ -6,5 +6,9 @@
   buttonEl.addEventListener("click", () => {
     let userTitle = inputElTitle.value;
     let userContent = inputElContent.value;
+    const data = {
+      title: userTitle,
+      content: userContent
+    };
   });
 })();

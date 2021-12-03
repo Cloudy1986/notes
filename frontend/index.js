@@ -9,10 +9,12 @@ buttonEl.addEventListener('click', () => {
   let userContent = inputElContent.value;
 
   // Create a data object containing the title and content
-  // const data = {
-  // title: userTitle,
-  // content: userContent
-  // };
+  const data = {
+  title: userTitle,
+  content: userContent
+  };
+
+  // Add the data object to the array in the server
 });
 
 
