@@ -1,3 +1,8 @@
+const updateHtml = require('./updateHtml');
+
+// Get notes from the server and display them in the browser
+updateHtml();
+
 // Set variables for the html elements on index.html - the two input fields and the button
 const inputElTitle = document.querySelector('#user_input_note_title');
 const inputElContent = document.querySelector('#user_input_note_content');
@@ -23,12 +28,4 @@ buttonEl.addEventListener('click', () => {
     body: JSON.stringify(data),
   })
   .then(response => response.json())
-  .then(data => {
-    console.log('Success:', data);
-  })
-  .catch((error) => {
-    console.error('Error:', error);
-  });
 });
-
-
