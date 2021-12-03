@@ -2,7 +2,9 @@
   // index.js
   var inputElTitle = document.querySelector("#user_input_note_title");
   var inputElContent = document.querySelector("#user_input_note_content");
-  var buttonElSubmit = document.querySelector("#???");
-  buttonElSubmit.addEventListener("click", () => {
+  var buttonEl = document.querySelector("#add-note-button");
+  buttonEl.addEventListener("click", () => {
+    let userTitle = inputElTitle.value;
+    let userContent = inputElContent.value;
   });
 })();
